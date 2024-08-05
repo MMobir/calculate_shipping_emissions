@@ -1,22 +1,72 @@
-# Methdology statement
+## Getting Started
+
+Follow these instructions to set up the project, obtain the required API keys, and run the application.
+
+### Prerequisites
+
+1. **Python 3.12.3**: Ensure that you have Python 3.12.3 installed on your machine.
+
+### Installation
+
+1. **Clone the Repository**
+
+   Clone the repository to your local machine using the following command:
+
+   ```sh
+   git clone https://github.com/yourusername/repository.git
+
+2. **Set Up the Virtual Environment** 
+    Create and activate a virtual environment to manage your dependencies:
+    ```sh
+    # On macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+
+    # On Windows
+    python -m venv venv
+    .\venv\Scripts\activate
+
+3. **Install Dependencies**
+    Install the required packages using the provided requirements.txt file:
+    ```sh
+    pip install -r requirements.txt
+
+### Configuration
+
+1. **Obtain a Mapbox API Access Token**
+   - Sign up for a Mapbox account at [mapbox.com](https://www.mapbox.com/).
+   - Navigate to the Tokens page and create a new token.
+
+2. **Set Up Configuration**
+
+   Add your Mapbox API access token to the `config/config.json` file:
+
+   ```json
+   {
+       "MAPBOX_ACCESS_TOKEN": "your_mapbox_access_token_here"
+   }
+### Contact information
+Feel free to reach out for further information: mahmoudmobir@gmail.com
+
+## Methdology statement
 
 Our carbon emissions calculator offers a streamlined and comprehensive approach to estimating the carbon footprint of various transportation methods. This methodology is designed to be robust, transparent, and adaptable to various transport scenarios, leveraging the latest international standards and technological advancements. Below is a detailed overview of our methodology and ho it differs from existing solutions like Lune.
 
-## Accreditation
+### Accreditation
 
 In order to get accreditation against the [GLEC Framework](https://www.smartfreightcentre.org/en/our-programs/global-logistics-emissions-council/), please reach out to [Smart Freight Center](https://smartfreightcentre.org/en/)
 
-## Methodology Overview
+### Methodology Overview
 
 Our emissions calculations follow the [GHG Protocol](https://ghgprotocol.org/) and the [GLEC Framework](https://www.smartfreightcentre.org/en/our-programs/global-logistics-emissions-council/). The methodology involves the following steps:
 
-### Inputs
+#### Inputs
 
 1. **Route**: Distance in km/miles/nm or point-to-point coordinates.
 2. **Shipment**: Cargo weight in kg, metric tonnes, or TEUs.
 3. **Method**: Mode of transport.
 
-### Calculation Steps
+#### Calculation Steps
 
 1. **Calculate the Route**
     - If the distance is provided directly, we use it (converting miles or nautical miles to kilometers, if necessary).
@@ -47,27 +97,27 @@ Our emissions calculations follow the [GHG Protocol](https://ghgprotocol.org/) a
 4. **Complete Carbon Emissions Calculation**
     - Multiply total mass, total distance, and intensity factor, converting the result into Tonnes of CO2e.
 
-## Detailed Methodologies
+### Detailed Methodologies
 
-### Emission Factors
+#### Emission Factors
 
 All emission factors are extracted from the [GLEC Framework](https://smart-freight-centre-media.s3.amazonaws.com/documents/GLEC_FRAMEWORK_v3_UPDATED_02_04_24.pdf) (Part 3: Data, pages 75-124). The factors cover various modes of transport and are updated in accordance with any updates to the GLEC framework. This ensures our calculations remain accurate and aligned with the latest standards.
 
-[Simple Shipping Methods](Methdology%20statement%20af90a5cdc6004696add3f9f46be3763e/Simple%20Shipping%20Methods%20ffb0d385bb10497d91fec6a2934b677c.md)
+[Simple Shipping Methods](docs/SimpleShippingMethods.md)
 
-[Transshipment emission factors](Methdology%20statement%20af90a5cdc6004696add3f9f46be3763e/Transshipment%20emission%20factors%2058c0d02a785e4a958403cc309e5951c9.md)
+[Transshipment emission factors](docs/TransshipmentEmissionsFactors.md)
 
-### Sea Transport Methods
+#### Sea Transport Methods
 
 Our methodology for sea transport is detailed in specific documents for different types of sea transport:
 
-[Sea Shipping Methods](Methdology%20statement%20af90a5cdc6004696add3f9f46be3763e/Sea%20Shipping%20Methods%205b4229dc3b064c2fb8a827a7230cd7e8.md)
+[Sea Shipping Methods](docs/SeaShippingMethods.md)
 
-[Container Shipping Methods](Methdology%20statement%20af90a5cdc6004696add3f9f46be3763e/Container%20Shipping%20Methods%20175f0efddba840ee84d4bed6404a5285.md)
+[Container Shipping Methods](docs/ContainerShippingMethods.md)
 
-[Identified Shipping Method](Methdology%20statement%20af90a5cdc6004696add3f9f46be3763e/Identified%20Shipping%20Method%20e2e283031ea448678694ab291fe1430c.md)
+[Identified Shipping Method](docs/IdentifiedShippingMethods.md)
 
-### Air Transport Emissions Differentiation
+#### Air Transport Emissions Differentiation
 
 For air transport, we differentiate emissions based on the distance traveled:
 
@@ -76,9 +126,9 @@ For air transport, we differentiate emissions based on the distance traveled:
 
 This method ensures accurate emission estimates without requiring detailed input from the user about the aircraft type.
 
-## Example Calculation
+### Example Calculation
 
-### Input Data
+#### Input Data
 
 ```json
 {
