@@ -4,7 +4,7 @@ Our carbon emissions calculator offers a streamlined and comprehensive approach 
 
 ## Accreditation
 
-Our calculations adhere to the [GLEC Framework](https://www.smartfreightcentre.org/en/our-programs/global-logistics-emissions-council/).
+In order to get accreditation against the [GLEC Framework](https://www.smartfreightcentre.org/en/our-programs/global-logistics-emissions-council/), please reach out to [Smart Freight Center](https://smartfreightcentre.org/en/)
 
 ## Methodology Overview
 
