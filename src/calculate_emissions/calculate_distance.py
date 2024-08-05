@@ -2,10 +2,6 @@ import os
 import json
 import sys
 
-# # Ensure the 'src' directory is in sys.path for module imports
-# sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-
-# Use absolute imports
 try:
     from utils import (
         convert_distance_to_km,

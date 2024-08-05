@@ -6,15 +6,6 @@ from typing import Dict
 # Ensure the 'src' directory is in sys.path for module imports
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-# Import required functions using absolute imports
-# try:
-#     from calculate_emissions.calculate_mass import calculate_shipment_mass
-#     from calculate_emissions.calculate_distance import calculate_distance
-#     from calculate_emissions.calculate_emission_factor import get_emission_factor
-# except ImportError:
-#     from calculate_mass import calculate_shipment_mass
-#     from calculate_distance import calculate_distance
-#     from calculate_emission_factor import get_emission_factor
 from calculate_emissions.calculate_mass import calculate_shipment_mass
 from calculate_emissions.calculate_distance import calculate_distance
 from calculate_emissions.calculate_emission_factor import get_emission_factor

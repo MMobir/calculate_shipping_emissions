@@ -1,1 +1,5 @@
-python-dotenv==1.0.1
+pandas
+numpy
+requests
+os
+openpyxl
